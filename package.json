@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=4096 ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -28,6 +28,12 @@
     "@angular/forms": "^20.3.0",
     "@angular/platform-browser": "^20.3.0",
     "@angular/router": "^20.3.0",
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "axios": "^1.12.2",
+    "bootstrap": "^5.3.8",
+    "cross-env": "^10.1.0",
+    "linkify-html": "^4.3.2",
+    "linkifyjs": "^4.3.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
